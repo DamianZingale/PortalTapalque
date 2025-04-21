@@ -1,4 +1,4 @@
-package Entity;
+package com.tapalque.gastronomia.demo.Entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -25,9 +25,9 @@ public class ImagenLocal {
 
     public ImagenLocal(){};
     
-    public ImagenLocal(Long id_imagen, String imagen_local, LocalGastronomico imagenLocal) {
-        Id_imagen = id_imagen;
-        Imagen_local = imagen_local;
+    public ImagenLocal(String imagen_local, LocalGastronomico imagenLocal) {
+       
+        this.Imagen_local = imagen_local;
         this.imagenLocal = imagenLocal;
     }
 

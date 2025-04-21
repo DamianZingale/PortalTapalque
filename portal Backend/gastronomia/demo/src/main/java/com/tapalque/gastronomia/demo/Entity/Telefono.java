@@ -1,4 +1,4 @@
-package Entity;
+package com.tapalque.gastronomia.demo.Entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,8 +25,8 @@ public class Telefono {
 
     public Telefono(){};
     
-    public Telefono(Long id_telefono, String numero, LocalGastronomico telefonoLocal) {
-        Id_telefono = id_telefono;
+    public Telefono(String numero, LocalGastronomico telefonoLocal) {
+        
         this.numero = numero;
         this.telefonoLocal = telefonoLocal;
     }

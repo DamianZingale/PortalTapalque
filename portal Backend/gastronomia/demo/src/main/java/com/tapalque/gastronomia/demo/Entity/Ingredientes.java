@@ -1,4 +1,4 @@
-package Entity;
+package com.tapalque.gastronomia.demo.Entity;
 
 
 import jakarta.persistence.Entity;
@@ -22,8 +22,8 @@ public class Ingredientes {
     
     public Ingredientes(){};
 
-    public Ingredientes(Long id_ingrediente, Menu ingredienteMenu) {
-        this.id_ingrediente = id_ingrediente;
+    public Ingredientes(Menu ingredienteMenu) {
+    
         this.ingredienteMenu = ingredienteMenu;
     }
 

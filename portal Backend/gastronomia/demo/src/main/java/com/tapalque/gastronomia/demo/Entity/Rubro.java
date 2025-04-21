@@ -1,4 +1,4 @@
-package Entity;
+package com.tapalque.gastronomia.demo.Entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -24,8 +24,8 @@ public class Rubro {
 
     public Rubro(){};
     
-   public Rubro(Long id_rubro, String rubro, LocalGastronomico rubroLocal) {
-    this.id_rubro = id_rubro;
+   public Rubro(String rubro, LocalGastronomico rubroLocal) {
+    
     this.rubro = rubro;
     this.rubroLocal = rubroLocal;
 }

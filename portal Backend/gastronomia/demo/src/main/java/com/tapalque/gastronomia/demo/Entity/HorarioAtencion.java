@@ -1,4 +1,4 @@
-package Entity;
+package com.tapalque.gastronomia.demo.Entity;
 
 import java.time.LocalTime;
 
@@ -27,7 +27,7 @@ public class HorarioAtencion {
 
     @ManyToOne
     @JoinColumn(name = "local_id")
-    private LocalGastronomico local;
+    private LocalGastronomico horarioLocal;
 
 
     public enum diasSemana{
@@ -42,13 +42,13 @@ public class HorarioAtencion {
 
     public HorarioAtencion(){};
     
-    public HorarioAtencion(Long id_horario, HorarioAtencion.diasSemana dias, LocalTime apertura, LocalTime cierre,
+    public HorarioAtencion(HorarioAtencion.diasSemana dias, LocalTime apertura, LocalTime cierre,
             LocalGastronomico local) {
-        this.id_horario = id_horario;
+
         this.dias = dias;
         this.apertura = apertura;
         this.cierre = cierre;
-        this.local = local;
+        this.horarioLocal = local;
     }
 
     public Long getId_horario() {
@@ -84,11 +84,11 @@ public class HorarioAtencion {
     }
 
     public LocalGastronomico getLocal() {
-        return local;
+        return horarioLocal;
     }
 
     public void setLocal(LocalGastronomico local) {
-        this.local = local;
+        this.horarioLocal = local;
     }
 
     

@@ -1,4 +1,4 @@
-package Entity;
+package com.tapalque.gastronomia.demo.Entity;
 
 import java.time.LocalDate;
 
@@ -27,8 +27,8 @@ public class Resenias {
 
     public Resenias(){};
 
-    public Resenias(Long id_resenia, String comentario, int puntaje, LocalDate fecha, LocalGastronomico reseniaLocal) {
-        this.id_resenia = id_resenia;
+    public Resenias(String comentario, int puntaje, LocalDate fecha, LocalGastronomico reseniaLocal) {
+        
         this.comentario = comentario;
         this.puntaje = puntaje;
         this.fecha = fecha;

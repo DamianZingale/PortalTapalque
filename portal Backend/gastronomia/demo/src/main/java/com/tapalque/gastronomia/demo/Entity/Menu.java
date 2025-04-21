@@ -1,4 +1,4 @@
-package Entity;
+package com.tapalque.gastronomia.demo.Entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,9 +33,9 @@ public class Menu {
 
     public Menu(){};
     
-    public Menu(Long id_menu, String plato, String descripcion, int comensales, List<Ingredientes> ingredientes,
+    public Menu(String plato, String descripcion, int comensales, List<Ingredientes> ingredientes,
             LocalGastronomico menuLocal) {
-        this.id_menu = id_menu;
+        
         this.plato = plato;
         this.descripcion = descripcion;
         this.comensales = comensales;

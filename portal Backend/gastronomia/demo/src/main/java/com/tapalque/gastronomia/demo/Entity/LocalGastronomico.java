@@ -1,4 +1,4 @@
-package Entity;
+package com.tapalque.gastronomia.demo.Entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,10 +52,10 @@ public class LocalGastronomico {
     
     public LocalGastronomico(){};
 
-    public LocalGastronomico(Long id_local, String nombreLocal, String direccion, String ubicacion_map, boolean estado,
+    public LocalGastronomico(String nombreLocal, String direccion, String ubicacion_map, boolean estado,
                              List<Telefono> telefonos, List<Rubro> rubros, List<Menu> menu, List<HorarioAtencion> horarios,
                              List<ImagenLocal> imagenes, List<Resenias> resenia) {
-        Id_local = id_local;
+        
         this.nombreLocal = nombreLocal;
         this.direccion = direccion;
         this.ubicacion_map = ubicacion_map;
