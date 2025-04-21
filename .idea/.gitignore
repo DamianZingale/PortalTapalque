@@ -1,0 +1,24 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Environment-dependent path to Maven home directory
+/mavenHomeManager.xml
+# database connection
+*.env
+/.env
+#vscode
+/.vscode
+# IntelliJ IDEA
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/gradle.xml
+/.idea/libraries
+/.idea/gradle.xml
+/.idea/encodings.xml
+/.idea/dictionaries
+/.idea/assetWizardSettings.xml  
+#ECLIPSE
+/.classpath
+/.project
+/.settings
