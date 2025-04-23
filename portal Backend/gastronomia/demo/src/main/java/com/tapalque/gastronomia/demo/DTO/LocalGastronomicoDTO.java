@@ -1,8 +1,8 @@
 package com.tapalque.gastronomia.demo.DTO;
 
-
-
 import java.util.List;
+
+import org.hibernate.validator.constraints.URL;
 
 import com.tapalque.gastronomia.demo.Entity.HorarioAtencion;
 import com.tapalque.gastronomia.demo.Entity.ImagenLocal;
@@ -10,13 +10,32 @@ import com.tapalque.gastronomia.demo.Entity.LocalGastronomico;
 import com.tapalque.gastronomia.demo.Entity.Resenias;
 import com.tapalque.gastronomia.demo.Entity.Telefono;
 
-public class LocalGastronomicoDTO {
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Null;
+import jakarta.validation.constraints.Size;
 
+public class LocalGastronomicoDTO {
+    
+    @Null(message = "El ID es auto-generado y no debe ser establecido")
     private Long Id_local;
+    
+    @NotNull(message = "El nombre del local no puede ser nulo.")
+    @Size(min = 1, max = 50, message = "El nombre del local debe tener entre 1 y 50 caracteres.")
     private String nombre_local;
+
+    @NotNull(message = "La dirección del local no puede ser nula.")
+    @Size(min = 1, max = 200, message = "La dirección del local debe tener entre 1 y 200 caracteres.")
     private String direccion_local;
+
+    @URL(message = "La URL debe ser válida.")
     private String url_mapa;
+
+    @Valid
+    @NotEmpty(message = "Debe haber al menos un teléfono.")
     private List<Telefono> telefono_local;
+
     private List<ImagenLocal> fotos;
     private List<HorarioAtencion> horarios;
     private List<Resenias> comentarios;

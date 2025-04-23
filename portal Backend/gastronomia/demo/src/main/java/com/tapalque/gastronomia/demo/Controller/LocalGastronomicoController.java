@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tapalque.gastronomia.demo.DTO.LocalGastronomicoDTO;
 
+import jakarta.validation.Valid;
+
 
 
 @RestController
@@ -34,12 +36,15 @@ public class LocalGastronomicoController {
     }
 
     @PostMapping("/save")//crear nuevo local gastronomico
-    public ResponseEntity<LocalGastronomicoDTO> saveLocalController(@RequestBody LocalGastronomicoDTO nuevo_local) {
+    public ResponseEntity<LocalGastronomicoDTO> saveLocalController(@Valid @RequestBody LocalGastronomicoDTO nuevo_local) {
         return null;
     }
-
+    @PostMapping("/saveAll")//crear varios locales gastronomicos
+    public ResponseEntity<List<LocalGastronomicoDTO>> saveAllLocalController(@Valid @RequestBody List<LocalGastronomicoDTO> nuevo_local) {
+        return null;
+    }
     @PutMapping("/reload/{id}")//actualizar
-    public ResponseEntity<LocalGastronomicoDTO> reloadLocalController (@PathVariable Long id, @RequestBody LocalGastronomicoDTO actualizar_local) {
+    public ResponseEntity<LocalGastronomicoDTO> reloadLocalController (@Valid @PathVariable Long id, @RequestBody LocalGastronomicoDTO actualizar_local) {
         return null;
     }
     
