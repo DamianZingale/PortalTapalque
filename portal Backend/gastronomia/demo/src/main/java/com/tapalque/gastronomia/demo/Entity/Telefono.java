@@ -9,6 +9,8 @@ import jakarta.persistence.ManyToOne;
 
 
 
+
+
 @Entity
 public class Telefono {
 
@@ -20,7 +22,7 @@ public class Telefono {
 
 
     @ManyToOne
-    @JoinColumn(name = "local_id") // Esto crea la FK en la tabla telefono
+    @JoinColumn(name = "Id_local") // Esto crea la FK en la tabla telefono
     private LocalGastronomico telefonoLocal;
 
     public Telefono(){};

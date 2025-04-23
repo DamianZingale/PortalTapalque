@@ -28,7 +28,7 @@ public class Menu {
     private List<Ingredientes> ingredientes = new ArrayList<>();
     
     @ManyToOne
-    @JoinColumn(name = "local_id")
+    @JoinColumn(name = "Id_local")
     private LocalGastronomico menuLocal;
 
     public Menu(){};

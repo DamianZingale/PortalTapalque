@@ -3,7 +3,6 @@ com/tapalque/gastronomia/demo/DTO/LocalGastronomicoDTO.class
 com/tapalque/gastronomia/demo/DemoApplication.class
 com/tapalque/gastronomia/demo/Repository/LocalRepositoryInterface.class
 com/tapalque/gastronomia/demo/Controller/LocalGastronomicoController.class
-application.properties
 com/tapalque/gastronomia/demo/Entity/Menu.class
 com/tapalque/gastronomia/demo/Entity/ImagenLocal.class
 com/tapalque/gastronomia/demo/Entity/Rubro.class
