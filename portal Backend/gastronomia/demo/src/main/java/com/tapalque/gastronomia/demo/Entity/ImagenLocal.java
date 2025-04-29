@@ -20,7 +20,7 @@ public class ImagenLocal {
     private String Imagen_local;
 
     @ManyToOne
-    @JoinColumn(name="Id_local")
+    @JoinColumn(name="pkLocal", referencedColumnName = "Id_local", nullable=false)
     private LocalGastronomico imagenLocal;
 
     public ImagenLocal(){};

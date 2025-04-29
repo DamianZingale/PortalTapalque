@@ -1,7 +1,7 @@
 package com.tapalque.gastronomia.demo.Entity;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -9,8 +9,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+
 
 
 @Entity
@@ -24,18 +25,19 @@ public class Menu {
     private String descripcion;
     private int comensales;
 
-    @OneToMany(mappedBy = "ingredienteMenu",cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Ingredientes> ingredientes = new ArrayList<>();
+    @ManyToMany(mappedBy = "ingredienteMenu", cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+private Set<Ingredientes> ingredientes = new HashSet<>();
+
     
     @ManyToOne
-    @JoinColumn(name = "Id_local")
+    @JoinColumn(name = "pkLocal", referencedColumnName = "Id_local", nullable=false)
     private LocalGastronomico menuLocal;
 
     public Menu(){};
     
-    public Menu(String plato, String descripcion, int comensales, List<Ingredientes> ingredientes,
+    public Menu(Long id_menu, String plato, String descripcion, int comensales, Set<Ingredientes> ingredientes,
             LocalGastronomico menuLocal) {
-        
+        this.id_menu = id_menu;
         this.plato = plato;
         this.descripcion = descripcion;
         this.comensales = comensales;
@@ -75,11 +77,11 @@ public class Menu {
         this.comensales = comensales;
     }
 
-    public List<Ingredientes> getIngredientes() {
+    public Set<Ingredientes> getIngredientes() {
         return ingredientes;
     }
 
-    public void setIngredientes(List<Ingredientes> ingredientes) {
+    public void setIngredientes(Set<Ingredientes> ingredientes) {
         this.ingredientes = ingredientes;
     }
 

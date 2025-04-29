@@ -26,7 +26,7 @@ public class HorarioAtencion {
     private LocalTime cierre;
 
     @ManyToOne
-    @JoinColumn(name = "Id_local")
+    @JoinColumn(name = "pkLocal", referencedColumnName = "Id_local", nullable=false)
     private LocalGastronomico horarioLocal;
 
 

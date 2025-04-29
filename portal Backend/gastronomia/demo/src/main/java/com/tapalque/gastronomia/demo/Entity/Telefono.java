@@ -22,7 +22,7 @@ public class Telefono {
 
 
     @ManyToOne
-    @JoinColumn(name = "Id_local") // Esto crea la FK en la tabla telefono
+    @JoinColumn(name = "pkLocal", referencedColumnName = "Id_local", nullable=false) 
     private LocalGastronomico telefonoLocal;
 
     public Telefono(){};

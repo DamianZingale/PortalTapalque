@@ -19,7 +19,7 @@ public class Rubro {
     private String rubro;
 
    @ManyToOne
-    @JoinColumn(name="Id_local")
+    @JoinColumn(name="pkLocal", referencedColumnName = "Id_local", nullable=false)
     private LocalGastronomico rubroLocal;
 
     public Rubro(){};

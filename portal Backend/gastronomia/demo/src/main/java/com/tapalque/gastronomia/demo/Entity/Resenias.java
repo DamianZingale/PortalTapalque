@@ -22,7 +22,7 @@ public class Resenias {
     private LocalDate fecha;
 
     @ManyToOne
-    @JoinColumn(name = "local_id")
+    @JoinColumn(name = "pkLocal", referencedColumnName = "Id_local", nullable=false)
     private LocalGastronomico reseniaLocal;
 
     public Resenias(){};
