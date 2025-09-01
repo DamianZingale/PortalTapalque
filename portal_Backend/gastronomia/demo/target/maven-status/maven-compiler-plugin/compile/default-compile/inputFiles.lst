@@ -1,0 +1,16 @@
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Controller/LocalGastronomicoController.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/DTO/LocalGastronomicoDTO.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/DemoApplication.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Entity/HorarioAtencion.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Entity/ImagenLocal.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Entity/Ingredientes.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Entity/LocalGastronomico.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Entity/Menu.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Entity/Resenias.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Entity/Rubro.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Entity/Telefono.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Exceptions/ErrorDTO.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Exceptions/GlobalExceptionHandler.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Repository/LocalRepositoryInterface.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Service/I_localGastronomicoService.java
+/home/damian/Escritorio/PortalTapalque/portal_Backend/gastronomia/demo/src/main/java/com/tapalque/gastronomia/demo/Service/LocalGastronomicoService.java
